@@ -311,7 +311,6 @@ function revisarMovimientosGuiasCallcenter(admin, seguimiento, id_heka, guia) {
         });
     });
   } else {
-    console.log("entre al que era")
     filtro = $("#input-filtrado-callcenter").val().split(",");
     filtro.forEach((v, i) => {
       firebase
@@ -341,6 +340,7 @@ function revisarMovimientosGuiasCallcenter(admin, seguimiento, id_heka, guia) {
         });
     });
   }
+  cargadorClass.add("d-none");
 }
 
 function consultarGuiaFbCallcenter(
